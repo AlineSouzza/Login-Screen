@@ -6,8 +6,8 @@ export default function App() { //A função(App) irá rodar como padrão. Caso 
     <View style={{ flex: 1, backgroundColor: '#eee', alignItems: 'center' }}>
       <Text style={{ marginTop: 150, fontSize: 30 }}>Bem-Vindo!</Text>
       <Text style={{ textAlign: 'center', marginTop: 70, fontSize: 14 }}>Faça seu login ou se cadastre{'\n'} para ter acesso ao aplicativo.{'\n'} {'\n'} Boas compras!</Text>
-      <View style={{ marginTop: 80, alignItems: 'center', alignSelf: 'flex-start', marginLeft: 70, backgroundColor: '#fff' }}>
-        <Text> Logiin: </Text>
+      <View style={{ marginTop: 80, alignItems: 'center', alignSelf: 'flex-start', marginLeft: 70, flexDirection: 'row' }}>
+        <Text>  Login: </Text>
         <TextInput style={{ backgroundColor: '#fff', width: 150, borderColor: '#000', borderWidth: 1.5, borderRadius: 5, paddingLeft: 8 }}></TextInput>
       </View>
       <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 10, alignSelf: 'flex-start', marginLeft: 70 }}>
@@ -25,7 +25,9 @@ export default function App() { //A função(App) irá rodar como padrão. Caso 
 /*
   flexDirection: 'row' = altera a orientação dos itens dentro da view para horizontal
    alignSelf: 'flex-start' = posiciona a view a esquerda da tela
-    borderWidth: 1.5 = define o tamanho da borda
-    borderRadius: 5 = define a angularura da borda
+    borderWidth: 1.5 = define a espessura da borda
+    borderRadius: 5 = define a angulatura da borda
     textDecorationLine: 'underline' = sublinha texto
+    pedding: é o espaçamento interno da view.
+    margin: é o espaçamento externo
  */
